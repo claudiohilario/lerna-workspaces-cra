@@ -1,6 +1,6 @@
 # Example CRA - Workspaces
 ![](https://i.imgur.com/9BI6b0m.png)
-
+![](https://github.com/claudiohilario/lerna-workspaces-cra/blob/master/example_dev.gif)
 ## Folder Structure
 - packages
   - app-one (CRA) - The app one, created by Create React App
