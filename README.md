@@ -1,4 +1,5 @@
 # Example CRA - Workspaces
+![](https://i.imgur.com/9BI6b0m.png)
 
 ## Folder Structure
 - packages
