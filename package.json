@@ -1,0 +1,18 @@
+{
+  "name": "ontech",
+  "private": "true",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap": "lerna bootstrap",
+    "run:appOne": "yarn --cwd packages/app-one start",
+    "run:appTwo": "yarn --cwd packages/app-two start"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}
