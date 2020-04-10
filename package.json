@@ -5,14 +5,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "bootstrap": "lerna bootstrap",
-    "run:appOne": "yarn --cwd packages/app-one start",
-    "run:appTwo": "yarn --cwd packages/app-two start"
+    "app-one:start": "yarn --cwd packages/app-one start",
+    "app-one:build": "yarn --cwd packages/app-one build",
+    "app-two:start": "yarn --cwd packages/app-two start",
+    "app-two:build": "yarn --cwd packages/app-two build"
   },
   "workspaces": [
     "packages/*"
   ],
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "lerna": "^3.20.2",
+    "yarn": "^1.22.4"
   }
 }

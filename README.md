@@ -7,7 +7,7 @@
   - app-two (CRA) - The app one, created by Create React App
   - shared - The shared components.
   
-## Install and run
+## Install and start
 
 ```
 cd /lerna-example
@@ -15,9 +15,16 @@ npm install
 
 npm run bootstrap
 
-npm run run:appOne
-npm run run:appTwo
+npm run app-one:start
+npm run app-two:start
 ```
+
+## Build
+```
+npm run app-one:build
+npm run app-two:build
+```
+
 ## craco.config.js
 
 ```js
