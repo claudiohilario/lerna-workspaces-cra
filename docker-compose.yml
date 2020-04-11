@@ -1,0 +1,27 @@
+version: "3"
+services:                                   
+    appone:
+        logging: 
+            driver: "json-file"
+            options: 
+                max-size: "100m"
+        stdin_open: true
+        build:
+            context: ./
+            dockerfile: dockerfile
+        container_name: appone
+        image: "appone"
+        ports:
+            - 4000:4000
+        networks: 
+            - frontend         
+        volumes:
+            - ./:/app
+            - /app/node_modules
+        environment: 
+            - NODE_ENV=development
+        env_file: 
+            - ./packages/app-one/.env
+        restart: on-failure
+networks:
+    frontend:

@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "bootstrap": "lerna bootstrap",
-    "app-one:start": "yarn --cwd packages/app-one start",
+    "app-one:start": "cd packages/app-one && yarn start",
     "app-one:build": "yarn --cwd packages/app-one build",
     "app-two:start": "yarn --cwd packages/app-two start",
     "app-two:build": "yarn --cwd packages/app-two build"
