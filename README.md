@@ -25,6 +25,11 @@ npm run app-one:build
 npm run app-two:build
 ```
 
+## Docker Example
+```
+docker-compose up --build --remove-orphans --detach appone
+```
+
 ## craco.config.js
 
 ```js
